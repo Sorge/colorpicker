@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="30dp" >
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/LappTitle" />
+
+    <LinearLayout
+        android:id="@+id/lowerPart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/leftPart"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/buttonPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LbuttonPhoto" />
+
+            <Button
+                android:id="@+id/buttonSaved"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LbuttonSaved" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rightPart"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/buttonPicture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LbuttonPicture" />
+
+            <Button
+                android:id="@+id/buttonInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LbuttonInfo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

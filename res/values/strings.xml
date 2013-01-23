@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- START MENU -->
+    <string name="app_name">ColorPicker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_startup">StartupActivity</string>
+    <string name="LappTitle">Color Picker</string>
+    <string name="LbuttonPhoto">Take a photo</string>
+    <string name="LbuttonPicture">Load a picture</string>
+    <string name="LbuttonSaved">Browse saved</string>
+    <string name="LbuttonInfo">Information</string>
+
+    <!-- INFO BOX -->
+    <string name="titleInfo">App Info</string>
+    <string name="tvInfo">\
+        This app will allow you to create your own, <i>unique</i> color palettes.<br />        If there is a picture you adore it will help you find the colors that seized you attention. Found <b>the</b> perfect flower? Let it uncover its magic.<br /><br />        You can use either a picture saved on your device or snap a photo for reference.	</string>
+    <string name="title_activity_information_box">App Info</string>
+    <string name="title_activity_photo_adjust">PhotoAdjust</string>
+    
+    <!-- PHOTO ADJUSTING -->
+    <string name="lBright">Brightness</string>
+    <string name="lContr">Contrast</string>
+
+</resources>

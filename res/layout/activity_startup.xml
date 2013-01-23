@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LappTitle" />
+
+    <Button
+        android:id="@+id/buttonPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LbuttonPhoto" />
+
+    <Button
+        android:id="@+id/buttonPicture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LbuttonPicture" />
+
+    <Button
+        android:id="@+id/buttonSaved"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LbuttonSaved" />
+
+    <Button
+        android:id="@+id/buttonInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LbuttonInfo" />
+
+</LinearLayout>
