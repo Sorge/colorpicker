@@ -20,8 +20,12 @@ public class PhotoAdjust extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_adjust);
         setupVars();
-        extraPhoto = (Bitmap) savedInstanceState.get("photo");
-        photo.setImageBitmap(extraPhoto); 
+        if(getIntent().hasExtra("photo")) {
+        	Bundle extr = getIntent().getBundleExtra("photo");
+        	extraPhoto = (Bitmap) extr.get("data");
+        	photo.setImageBitmap(extraPhoto); 
+        }
+        
     }
 
     @Override

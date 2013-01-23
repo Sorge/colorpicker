@@ -68,12 +68,13 @@ public class StartupActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		Log.i("info", "result came");
 		if(resultCode == RESULT_OK) {
 			Bundle extras = data.getExtras();
 			Bitmap image = (Bitmap) extras.get("data");
+			
 			i = new Intent(this, PhotoAdjust.class);
-			i.putExtra("photo", image);
+			//i.putExtra("photo", image);
+			i.putExtra("photo", extras);
 			startActivity(i);
 		}
 	}
