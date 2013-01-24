@@ -21,5 +21,7 @@
     <!-- PHOTO ADJUSTING -->
     <string name="lBright">Brightness</string>
     <string name="lContr">Contrast</string>
+    
+    <string name="lCreatePal">Create Palette</string>
 
 </resources>

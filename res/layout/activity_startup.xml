@@ -15,25 +15,25 @@
         android:text="@string/LappTitle" />
 
     <Button
-        android:id="@+id/buttonPhoto"
+        android:id="@+id/bPhoto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/LbuttonPhoto" />
 
     <Button
-        android:id="@+id/buttonPicture"
+        android:id="@+id/bPicture"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/LbuttonPicture" />
 
     <Button
-        android:id="@+id/buttonSaved"
+        android:id="@+id/bSaved"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/LbuttonSaved" />
 
     <Button
-        android:id="@+id/buttonInfo"
+        android:id="@+id/bInfo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/LbuttonInfo" />

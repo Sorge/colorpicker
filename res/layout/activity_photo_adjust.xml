@@ -2,40 +2,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:weightSum="1">
+    android:orientation="vertical"
+    android:weightSum="1" >
 
     <ImageView
         android:id="@+id/ivPhoto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.7"
         android:src="@drawable/blank_pic"
-        android:layout_weight="0.7" />
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />"
 
     <TextView
         android:id="@+id/tvBright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.02"
+        android:layout_weight="0.01"
         android:text="@string/lBright" />
 
     <SeekBar
         android:id="@+id/sbBrightness"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.13" />
+        android:layout_weight="0.11"
+        android:max="100"
+        android:progress="50" />
 
     <TextView
         android:id="@+id/tvContr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.02"
+        android:layout_weight="0.01"
         android:text="@string/lContr" />
 
     <SeekBar
         android:id="@+id/sbContrast"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.13" />
+        android:layout_weight="0.11"
+        android:max="100"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/bCreatePhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/lCreatePal" />
 
 </LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.65"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/blank_pic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.35"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvBright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lBright" />
+
+        <SeekBar
+            android:id="@+id/sbBrightness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:progress="100"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:id="@+id/tvContr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lContr" />
+
+        <SeekBar
+            android:id="@+id/sbContrast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:progress="100"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/bCreatePhoto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lCreatePal"
+            android:layout_gravity="bottom" />"
+    </LinearLayout>
+
+</LinearLayout>
