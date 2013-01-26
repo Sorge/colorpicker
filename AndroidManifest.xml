@@ -22,8 +22,8 @@
         </activity>
         <activity
             android:name=".InformationBox"
-            android:label="@string/title_activity_information_box" 
-            android:theme="@android:style/Theme.Dialog">
+            android:label="@string/title_activity_information_box"
+            android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,6 +33,28 @@
         <activity
             android:name=".PhotoAdjust"
             android:label="@string/title_activity_photo_adjust" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <!-- TESTS TO WYJEBANIA POTEM -->
+        <activity
+            android:name=".ImageTest"
+            android:label="@string/title_activity_image_test" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherTest"
+            android:label="@string/title_activity_other_test" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

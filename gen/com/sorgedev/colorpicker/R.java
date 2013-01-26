@@ -26,31 +26,56 @@ public final class R {
         public static final int blank_pic=0x7f020000;
         public static final int ic_action_search=0x7f020001;
         public static final int ic_launcher=0x7f020002;
+        public static final int test=0x7f020003;
     }
     public static final class id {
-        public static final int appTitle=0x7f090007;
-        public static final int bCreatePhoto=0x7f090006;
-        public static final int bInfo=0x7f09000b;
-        public static final int bPhoto=0x7f090008;
-        public static final int bPicture=0x7f090009;
-        public static final int bSaved=0x7f09000a;
-        public static final int ivPhoto=0x7f090001;
-        public static final int menu_settings=0x7f09000c;
-        public static final int sbBrightness=0x7f090003;
-        public static final int sbContrast=0x7f090005;
-        public static final int tvBright=0x7f090002;
-        public static final int tvContr=0x7f090004;
-        public static final int tvInfo=0x7f090000;
+        public static final int appTitle=0x7f09001b;
+        public static final int bCreatePhoto=0x7f09001a;
+        public static final int bInfo=0x7f09001f;
+        public static final int bPhoto=0x7f09001c;
+        public static final int bPicture=0x7f09001d;
+        public static final int bSaved=0x7f09001e;
+        public static final int bTestBDark=0x7f090007;
+        public static final int bTestBLight=0x7f090005;
+        public static final int bTestBLighter=0x7f090006;
+        public static final int bTestDarker=0x7f090008;
+        public static final int bar_a=0x7f09000c;
+        public static final int bar_b=0x7f090012;
+        public static final int bar_g=0x7f090010;
+        public static final int bar_r=0x7f09000e;
+        public static final int colorinfo=0x7f090014;
+        public static final int iv=0x7f09000a;
+        public static final int ivPhoto=0x7f090015;
+        public static final int ivTest=0x7f090000;
+        public static final int menu_settings=0x7f090020;
+        public static final int mode=0x7f090013;
+        public static final int sbBrightness=0x7f090017;
+        public static final int sbContrast=0x7f090019;
+        public static final int sbTestBright=0x7f090002;
+        public static final int sbTestContr=0x7f090004;
+        public static final int text_a=0x7f09000b;
+        public static final int text_b=0x7f090011;
+        public static final int text_g=0x7f09000f;
+        public static final int text_r=0x7f09000d;
+        public static final int tvBright=0x7f090016;
+        public static final int tvContr=0x7f090018;
+        public static final int tvInfo=0x7f090009;
+        public static final int tvTestBright=0x7f090001;
+        public static final int tvTestContr=0x7f090003;
     }
     public static final class layout {
-        public static final int activity_information_box=0x7f030000;
-        public static final int activity_photo_adjust=0x7f030001;
-        public static final int activity_startup=0x7f030002;
+        public static final int activity_image_test=0x7f030000;
+        public static final int activity_information_box=0x7f030001;
+        public static final int activity_other_test=0x7f030002;
+        public static final int activity_photo_adjust=0x7f030003;
+        public static final int activity_startup=0x7f030004;
     }
     public static final class menu {
-        public static final int activity_information_box=0x7f080000;
-        public static final int activity_photo_adjust=0x7f080001;
-        public static final int activity_startup=0x7f080002;
+        public static final int activity_image_test=0x7f080000;
+        public static final int activity_information_box=0x7f080001;
+        public static final int activity_other_test=0x7f080002;
+        public static final int activity_photo_adjust=0x7f080003;
+        public static final int activity_startup=0x7f080004;
     }
     public static final class string {
         public static final int LappTitle=0x7f060004;
@@ -71,7 +96,9 @@ public final class R {
         /**  INFO BOX 
          */
         public static final int titleInfo=0x7f060009;
+        public static final int title_activity_image_test=0x7f060010;
         public static final int title_activity_information_box=0x7f06000b;
+        public static final int title_activity_other_test=0x7f060011;
         public static final int title_activity_photo_adjust=0x7f06000c;
         public static final int title_activity_startup=0x7f060003;
         public static final int tvInfo=0x7f06000a;

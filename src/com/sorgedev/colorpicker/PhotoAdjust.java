@@ -14,15 +14,15 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.support.v4.app.NavUtils;
 
-public class PhotoAdjust extends Activity implements OnClickListener {
+public class PhotoAdjust extends Activity implements OnClickListener, OnSeekBarChangeListener {
 
 	ImageView photo;
 	SeekBar bright, contr;
 	Bitmap extraPhoto;
-	Button create;
-	Bundle extr;
+	Button create;	
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class PhotoAdjust extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_photo_adjust);
 		setupVars();
 
+		Bundle extr;
 		if (getIntent().hasExtra("photo")) {
 			extr = getIntent().getBundleExtra("photo");
 			extraPhoto = (Bitmap) extr.get("data");
@@ -63,7 +64,9 @@ public class PhotoAdjust extends Activity implements OnClickListener {
 	void setupVars() {
 		photo = (ImageView) findViewById(R.id.ivPhoto);
 		bright = (SeekBar) findViewById(R.id.sbBrightness);
+		bright.setOnSeekBarChangeListener(this);
 		contr = (SeekBar) findViewById(R.id.sbContrast);
+		contr.setOnSeekBarChangeListener(this);
 		create = (Button) findViewById(R.id.bCreatePhoto);
 		create.setOnClickListener(this);
 	}
@@ -71,6 +74,39 @@ public class PhotoAdjust extends Activity implements OnClickListener {
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
 
+	}
+
+	public void onProgressChanged(SeekBar sb, int progress, boolean fromUser) {
+		switch(sb.getId()) {
+		case R.id.sbBrightness :
+			int mulVal = 0xFFFFFFFF;
+			int addVal = 0xFFFFFFFF * (progress - 100);
+			Log.i("filter", "addVal - " + addVal);
+			
+			break;
+		case R.id.sbContrast :
+			break;
+		}
+	}
+
+	public void onStartTrackingTouch(SeekBar seekBar) {
+		switch(seekBar.getId()) {
+		case R.id.sbBrightness :
+			break;
+		case R.id.sbContrast :
+			break;
+		}
+		
+	}
+
+	public void onStopTrackingTouch(SeekBar seekBar) {
+		switch(seekBar.getId()) {
+		case R.id.sbBrightness :
+			break;
+		case R.id.sbContrast :
+			break;
+		}
+		
 	}
 
 }

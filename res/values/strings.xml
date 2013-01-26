@@ -17,11 +17,12 @@
         This app will allow you to create your own, <i>unique</i> color palettes.<br />        If there is a picture you adore it will help you find the colors that seized you attention. Found <b>the</b> perfect flower? Let it uncover its magic.<br /><br />        You can use either a picture saved on your device or snap a photo for reference.	</string>
     <string name="title_activity_information_box">App Info</string>
     <string name="title_activity_photo_adjust">PhotoAdjust</string>
-    
+
     <!-- PHOTO ADJUSTING -->
     <string name="lBright">Brightness</string>
     <string name="lContr">Contrast</string>
-    
     <string name="lCreatePal">Create Palette</string>
+    <string name="title_activity_image_test">ImageTest</string>
+    <string name="title_activity_other_test">OtherTest</string>
 
 </resources>

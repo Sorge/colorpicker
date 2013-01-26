@@ -1,0 +1,74 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test" />
+
+        <TextView
+            android:id="@+id/tvTestBright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brightness" />
+
+        <SeekBar
+            android:id="@+id/sbTestBright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="510"
+            android:progress="255" />
+
+        <TextView
+            android:id="@+id/tvTestContr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contrast" />
+
+        <SeekBar
+            android:id="@+id/sbTestContr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="510"
+            android:progress="255" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/bTestBLight"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lighter" />
+
+            <Button
+                android:id="@+id/bTestBLighter"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lightest" />
+
+            <Button
+                android:id="@+id/bTestBDark"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darker" />
+
+            <Button
+                android:id="@+id/bTestDarker"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darkest" />
+
+        </LinearLayout>
+
+    </LinearLayout>
