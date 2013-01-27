@@ -62,8 +62,7 @@ public class StartupActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.bSaved:
 			//TODO przycisk od testów, palety póŸniej
-			i = new Intent(this, ImageTest.class);
-			startActivity(i);
+			
 			break;
 		case R.id.bInfo:
 			i = new Intent(this, InformationBox.class);

@@ -114,6 +114,7 @@ public class ImageTest extends Activity implements OnClickListener,
 	
 	void setFilter() {
 		//TODO sprawdziæ, czy zmniejszenie iloœci wartoœci nie by³oby lepsze i szybsze
+		//dzia³a³o ok u mnie i S³awka, przyda³oby siê coœ jeszcze
 		
 		float f = (float) (259 * (progressC + 255)) / (255 * (259 - progressC));
 		float src[] = {f, 0, 0, 0, (-128 * f + 128) + progressB,

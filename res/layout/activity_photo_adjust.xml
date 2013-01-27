@@ -12,7 +12,7 @@
         android:layout_weight="0.7"
         android:src="@drawable/blank_pic"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside" />"
+        android:scaleType="centerInside" />
 
     <TextView
         android:id="@+id/tvBright"
@@ -26,8 +26,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.11"
-        android:max="100"
-        android:progress="50" />
+        android:max="510"
+        android:progress="255" />
 
     <TextView
         android:id="@+id/tvContr"
@@ -41,8 +41,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.11"
-        android:max="100"
-        android:progress="50" />
+        android:max="510"
+        android:progress="255" />
 
     <Button
         android:id="@+id/bCreatePhoto"
